@@ -198,9 +198,13 @@ function OrderPage() {
   useEffect(() => {
     httpGetAllProducts();
     if (isIdPresent) {
+      document.title = 'Edit Order';
       httpGetSingleOrder();
     }
-    document.title = 'My Orders';
+    else
+    {
+      document.title = 'Add New Order';
+    }
   }, [])
 
   const style = {

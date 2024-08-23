@@ -1,5 +1,6 @@
-require('dotenv').config();
-const RUTA_BACKEND = process.env.new_backend;
+
+
+const RUTA_BACKEND = "http://localhost:3000";
 
 
 export {
